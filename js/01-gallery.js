@@ -20,7 +20,6 @@ function createImgCard(items) {
     }).join("");
 };
 // new render on window -------------------------------------
-
 function renderList() {
     galleryUl.innerHTML = createImgCard(galleryItems);
   };
@@ -48,8 +47,8 @@ function renderList() {
       instance.close();
     };
   };
-  window.document.addEventListener('click', zoomIn);
-  window.document.addEventListener('keydown', zoomOut);
+  galleryUl.addEventListener('click', zoomIn);
+
 
 // ----------------------------------------------------------------------------
 
